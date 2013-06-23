@@ -1,27 +1,12 @@
-/*
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Filename:	algebra_array.c
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Purpose:	Provide functions that do basic algebra to arrays.
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Author:		Jonathan Burrows
- *	Date:		November 30th 2012
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Dependancy:	string.h
- === === === === === === === === === === === === === === === === === === === === === === ===
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Filename:	algebra_array.c
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
  */
 #include "algebra_array.h"
 
-/*
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Function:	sum_array
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Purpose:	Adds and returns the sum of all elements in an array.
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	@param:		array,			The array whos elements will be added together.
- *				array_len,		The size of the array whos elements are being added.
- *	@return:	sum,			The sum of all elements in the array.
- === === === === === === === === === === === === === === === === === === === === === === ===
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	sum_array
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
  */
 int sum_array(int* array, size_t array_len){
 	int sum = 0;							/*Return value.*/				
@@ -35,20 +20,9 @@ int sum_array(int* array, size_t array_len){
 	return sum;
 }
 
-/*
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Function:	product_array
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Purpose:	Multiplies all the elements in an array with eachother and returns the
- *				product.
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	@param:		array,			The array whos elements will be multiplied together.
- *				array_len,		The size of the array whos elements being multiplied.
- *	@return:	product,		The product of all elements in the array.
- === === === === === === === === === === === === === === === === === === === === === === ===
- *	Notes:		If the array is empty, a special case must occur where the size is zero.
- *				Otherwise, the product is set to one before multiplying all the values.
- === === === === === === === === === === === === === === === === === === === === === === ===
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	product_array
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
  */
 int product_array(int* array, size_t array_len){
 	int product = 0;						/*Return value.*/
